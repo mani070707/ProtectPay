@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProtectPay Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">ProtectPay</div>
+    <div class="navbar-right">
+      <a href="#balance-sheet">BalanceSheet</a>
+      <a href="#contact-us">Contact Us</a>
+      <a href="#logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-pic"></div>
+    <div class="profile-info">
+      <h2>Welcome, <span id="guardian-name">Name</span>!</h2>
+      <p>Email: <span id="guardian-email">guardian@example.com</span></p>
+      <p>Connected to: <span id="ward-username">WardUsername</span></p>
+    </div>
+  </section>
+
+  <!-- Approval Section -->
+  <section class="approval-section">
+    <!-- Pending Approval Card -->
+    <div class="card" id="pending-approval">
+      <h3>Pending Approval</h3>
+      <ul id="pending-list">
+        <li>
+          <span>Request: $100</span>
+          <button class="accept-btn" onclick="moveToPastApproval(this)">✓</button>
+          <button class="reject-btn" onclick="moveToPastApproval(this, false)">✕</button>
+        </li>
+        <!-- Add more requests here as needed -->
+      </ul>
+    </div>
+
+    <!-- Past Approval Card -->
+    <div class="card" id="past-approval">
+      <h3>Past Approval</h3>
+      <ul id="past-list"></ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
