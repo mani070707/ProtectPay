@@ -11,3 +11,97 @@
 
 ![WhatsApp Image 2024-11-10 at 21 47 48 (1)](https://github.com/user-attachments/assets/4d003d85-cc40-421f-9445-402e59f71ae0)
 ![WhatsApp Image 2024-11-10 at 21 58 43](https://github.com/user-attachments/assets/546e7c4e-2795-4427-9951-130bcc4be6a3)
+
+
+✨ Features
+
+Secure Payment Processing 🔒
+
+End-to-end encryption for all transactions
+Multi-factor authentication
+Real-time fraud detection
+
+
+User Management 👥
+
+Role-based access control
+Profile management
+Transaction history tracking
+
+
+Admin Dashboard 📊
+
+Transaction monitoring
+User activity tracking
+Analytics and reporting
+
+
+
+🚀 Getting Started
+Prerequisites
+
+Node.js (v14 or higher)
+MongoDB
+npm or yarn
+
+Installation
+
+Clone the repository
+
+bashCopygit clone https://github.com/mani070707/ProtectPay.git
+cd ProtectPay
+
+Install dependencies
+
+bashCopy# Install server dependencies
+cd server
+npm install
+
+# Install client dependencies
+cd ../client
+npm install
+
+Environment Setup
+
+bashCopy# In server directory, create .env file
+cp .env.example .env
+# Add your environment variables
+
+Start the application
+
+bashCopy# Start server (from server directory)
+npm run dev
+
+# Start client (from client directory)
+npm start
+🏗️ Architecture
+CopyProtectPay/
+├── client/              # React frontend
+├── server/              # Node.js & Express backend
+├── middleware/          # Custom middleware
+└── config/             # Configuration files
+💡 Key Components
+
+Frontend: React.js with Material-UI
+Backend: Node.js & Express
+Database: MongoDB
+Authentication: JWT & bcrypt
+Payment Processing: [Your payment processor]
+
+🔐 Security Features
+
+Password hashing
+JWT authentication
+Rate limiting
+Input validation
+XSS protection
+CSRF protection
+
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
