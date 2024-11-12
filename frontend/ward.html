@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProtectPay Dashboard</title>
+  <link rel="stylesheet" href="stylesw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">ProtectPay</div>
+    <div class="navbar-right">
+      <a href="#balance-sheet">BalanceSheet</a>
+      <a href="#contact-us">Contact Us</a>
+      <a href="#logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-pic"></div>
+    <div class="profile-info">
+      <h2>Welcome, <span id="guardian-name">Name</span>!</h2>
+      <p>Email: <span id="guardian-email">ward@example.com</span></p>
+      <p>Connected to: <span id="ward-username">WardUsername</span></p>
+    </div>
+  </section>
+
+  <!-- Balance Cards Section -->
+  <section class="balance-section">
+    <!-- Daily Balance Card -->
+    <div class="card">
+      <h3>Daily Balance</h3>
+      <p>Amount: ₹500</p>
+      <button onclick="handleRequest('Daily Balance')">Request Approval</button>
+    </div>
+
+    <!-- Monthly Balance Card -->
+    <div class="card">
+      <h3>Monthly Balance</h3>
+      <p>Amount: ₹5000</p>
+      <button onclick="handleRequest('Monthly Balance')">Request Money</button>
+    </div>
+
+    <!-- Cashin Card -->
+    <div class="card">
+      <h3>Cashin</h3>
+      <p>Amount Received: ₹0</p>
+      <ul id="cashin-list"></ul>
+    </div>
+  </section>
+
+  <script src="scripts2.js"></script>
+</body>
+</html>
